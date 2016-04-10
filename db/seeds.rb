@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Question.create(ques: 'Who is the President of Russia?', opta: 'Vladimir Putin', optb: 'Shevchenko', optc: 'Medvedev', optd: 'None of the above', ans:'A')

@@ -1,4 +1,17 @@
-<div align="center">
-<h1>Questions#get_ques</h1>
-<p>Find me in app/views/questions/get_ques.html.erb</p>
+<div align="left">
+<% if @ques.blank? %>
+<p>There are not any questions currently in the system.</p>
+<% else %>
+<p>These are the current questions in our system</p>
+<h1>Question <%= @ques.id %></h1> 
+<p>
+	<%= @ques.ques %>
+</p>
+<ol type="A">
+	<li><%= @ques.opta %> </li>
+	<li><%= @ques.optb %> </li>
+	<li><%= @ques.optc %> </li>
+	<li><%= @ques.optd %> </li>
+</ol>
+<% end %>
 </div>
